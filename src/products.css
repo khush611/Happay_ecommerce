@@ -1,0 +1,39 @@
+.row {
+  margin-top: 5%;
+}
+/* .card {
+  font-size: 16px !important;
+} */
+ion-icon {
+  color: #1d7cbf;
+}
+
+h1 {
+  color: #4e5666;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+.card {
+  border: none;
+}
+.card-img-top {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-body {
+  text-align: left;
+}
+.right {
+  float: right;
+  font-weight: bold;
+}
+strike {
+  margin-right: 5px;
+}
+.card-title {
+  color: #3d434f;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 1rem;
+  margin-top: 15px;
+}

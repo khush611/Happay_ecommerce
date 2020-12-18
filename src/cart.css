@@ -1,0 +1,75 @@
+span,
+h2,
+h3 {
+  text-align: left;
+  color: #3d434f;
+}
+h3 {
+  padding: 10px;
+}
+
+.col-custom {
+  margin-right: 5%;
+}
+.number {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+.button ion-icon {
+  background-color: #3d434f;
+  color: white;
+  cursor: pointer;
+}
+.button {
+  background-color: #3d434f;
+  color: white;
+  cursor: pointer;
+}
+.left-button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.right-button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.remove {
+  background-color: #3d434f;
+  color: white;
+  border-radius: 50%;
+}
+.remove ion-icon {
+  background-color: #3d434f;
+  color: white;
+}
+.link {
+  text-align: left;
+  color: #3d434f;
+  text-decoration: none;
+}
+.add-items {
+  color: #1d7cbf;
+}
+
+.add-items ion-icon {
+  color: #1d7cbf;
+}
+.price-col {
+  background-color: #edf2f5;
+}
+.price-left {
+  float: left;
+}
+.price-right {
+  float: right;
+}
+
+.list-group .list-group-item {
+  border: none;
+}
+table,
+th {
+  color: #3d434f;
+}
