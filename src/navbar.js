@@ -13,7 +13,7 @@ function Navbar(props) {
     <div className="Navbar">
       <ul>
         <li>
-          <Link to="/products" className="nav-link logo">
+          <Link to="/" className="nav-link logo">
             <img
               src="https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/blue_logo.svg"
               alt="logo"

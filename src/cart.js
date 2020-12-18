@@ -17,7 +17,7 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
       productsInCart.push(basketProps.products[item]);
       productsPrice.push(basketProps.products[item]);
     }
-    console.log(productsInCart + " " + productsPrice);
+    // console.log(productsInCart + " " + productsPrice);
   });
   //looping ends
   productsInCart = productsInCart.map((product, index) => {
@@ -57,9 +57,8 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
   });
 
   productsPrice = productsPrice.map((product, index) => {
-    console.log("prod : ", product);
     return (
-      <ul className="list-group">
+      <ul className="list-group" key={index}>
         <li className="list-group-item">
           <span className="price-left">
             {product.numbers} x $ {product.final_price}
@@ -81,11 +80,12 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
   });
   const delivery = 5;
   const tax = 2;
+
   return (
     <div className="Cart">
       <div className="container">
         <div className="row justify-content-center">
-          <Link to="/products" className="link">
+          <Link to="/" className="link">
             <span>🠔Back to Home</span>
           </Link>
           <h2>Order Summary({productsInCart.length})</h2>
@@ -103,6 +103,15 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
               </thead>
               <tbody>{productsInCart}</tbody>
             </table>
+            <div className="row justify-content-center">
+              <Link to="/" className="link">
+                <span className="add-items">
+                  <b>
+                    <ion-icon name="add"></ion-icon>Add more Items
+                  </b>
+                </span>
+              </Link>
+            </div>
           </div>
           <div className="col price-col">
             <h3>Price Details</h3>
@@ -129,21 +138,15 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
                 </span>
               </li>
             </ul>
-            <div class="row">
-              <button type="button" class="btn btn-primary btn-lg btn-block">
+            <div className="row">
+              <button
+                type="button"
+                className="btn btn-primary btn-lg btn-block"
+              >
                 Place Order
               </button>
             </div>
           </div>
-        </div>
-        <div className="row justify-content-center">
-          <Link to="/products" className="link">
-            <span className="add-items">
-              <b>
-                <ion-icon name="add"></ion-icon>Add more Items
-              </b>
-            </span>
-          </Link>
         </div>
       </div>
     </div>
