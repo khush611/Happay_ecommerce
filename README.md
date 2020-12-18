@@ -11,7 +11,7 @@ Created with CodeSandbox
 Ecommerce website made with React & Redux
 
 Features:
-A. Listing page
+i. Listing page
 
 1.  a responsive screen of cards layout from the JSON provided.
 2.  Display the name, price, discounted price if it is there as striked, description.
@@ -19,7 +19,7 @@ A. Listing page
 4.  State should be maintained after refresh also.
 5.  When you click on the cart button, it will redirect you to Order Summary page
 
-    B. Summary page
+ii. Summary page
 
 6.  Order Summary will show the number of unique items.
 7.  Quantity can be changed from QTY column.
